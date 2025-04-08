@@ -103,3 +103,86 @@ The three quick-access options are displayed based on the user permissions provi
 - **Manage System Option**: If View Server Configuration permission is granted
 
 ### Dashboard
+
+# Roles & Permissions (Web)
+
+- `/home/roles`
+
+## Permissions
+
+- **View Roles**: Show the roles section to display a list of roles
+- **Add Roles**: Create a new role with permissions for web and mobile
+- **Edit Roles**: Manage Column Edit Option to edit a role
+- **Delete Roles**: Manage Column Delete Option to delete a role
+
+### Role Table Columns
+- Role Name
+- Manage
+
+Roles define the permissions for the users created. Role is a mandatory field in User creation. There are different sets of permissions for the web application and mobile application. Role creation requires:
+- Role Name
+- CATIE Web Permissions
+- CATIE Mobile Permissions
+- Checkbox: Whether to show the users associated with the roles in the advisor's dropdown in user creation
+
+### Roles Page
+
+Roles can be edited for permissions and name but can only be deleted when no users are associated with the role. Changes are saved when the “Save Role and Permissions” button is clicked. The "View" permission has dependencies with other permissions. Including add/edit/delete or any action that requires "View" will need its View permission. Removing it will throw an error stating that dependent permissions are included and cannot be removed.
+
+---
+
+## Role Creation & Permissions
+
+### Web User Permissions
+
+| **Permission**           | **Feature**            | **Sub-Feature**            | **UI**                          |
+|--------------------------|-----------------------|----------------------------|---------------------------------|
+| View Dashboard           | Dashboard             | -                          | Dashboard Sidebar Menu          |
+| View Profile             | Profile               | -                          | View Profile Option (Actions)   |
+| Update Profile           | -                     | -                          | Save Button (Profile Page)      |
+| View Users               | Users & Groups        | -                          | Users Section                   |
+| Add Users                | -                     | -                          | User Mgmt. Options (Create & Batch) |
+| Edit Users               | -                     | -                          | Manage Column                   |
+| Delete Users             | -                     | -                          | Manage Column                   |
+| View Groups              | Groups                | -                          | Groups Section                  |
+| Add Groups               | -                     | -                          | Group Mgmt. Options (Create & Batch) |
+| Edit Groups              | -                     | -                          | Manage Column                   |
+| Delete Groups            | -                     | -                          | Manage Column                   |
+| View Roles               | Roles                 | -                          | Roles Section                   |
+| Add Roles                | -                     | -                          | Roles Mgmt. Options (Create & Batch) |
+| Edit Roles               | -                     | -                          | Manage Column                   |
+| Delete Roles             | -                     | -                          | Manage Column                   |
+| View Devices             | Devices               | -                          | Devices Section                 |
+| Add Devices              | -                     | -                          | Device Mgmt. Options (Add & Batch) |
+| Edit Devices             | -                     | -                          | Manage Column                   |
+| Delete Devices           | -                     | -                          | Manage Column                   |
+| View Classes             | Classes               | -                          | Classes Section                 |
+| View Server Config       | System                | Server Configuration       | Server Configuration Section    |
+| Update Server Config     | -                     | -                          | Save Button (Server Config Page)|
+| View Properties          | Property Details      | -                          | Property Details Section        |
+| Update Properties        | -                     | -                          | Save Button (Property Page)     |
+| View Mustering           | Application           | Mustering                  | Mustering Section               |
+| Manage Mustering         | -                     | -                          | Manage Column (Muster)          |
+| View Mustering Loc       | -                     | Mustering Location         | Muster Location Section         |
+| Add Mustering Loc        | -                     | -                          | Add Mustering Loc Button        |
+| Edit Mustering Loc       | -                     | -                          | Manage Column                   |
+| Delete Mustering Loc     | -                     | -                          | Manage Column                   |
+| View Alarms              | Create & View         | Alarms                     | Create & View Alarms Section    |
+| Add Alarms               | -                     | -                          | Create New Alarm Button         |
+| Edit Alarms              | -                     | -                          | Manage Column                   |
+| Delete Alarms            | -                     | -                          | Manage Column                   |
+| View Docs & Images       | Documents & Images    | -                          | Documents & Images Section      |
+| Add Docs & Images        | -                     | -                          | Add Category, New File & Reorder|
+| Edit Docs & Images       | -                     | -                          | Manage Column (EDIT – Category & File) |
+| Delete Docs & Images     | -                     | -                          | Manage Column                   |
+| View Events              | Events                | -                          | Events Section                  |
+| Add Events               | -                     | -                          | Add Event Button                |
+| Edit Events              | -                     | -                          | Manage Column                   |
+| Delete Events            | -                     | -                          | Manage Column                   |
+| View Deployment Config   | Configurations        | Deploy Setup               | Deployment Setup Section        |
+| Edit Deployment Config   | -                     | -                          | Save Button                     |
+| View Alert Config        | Configurations        | Alert Setup                | Alert Setup Section             |
+| Edit Alert Config        | -                     | -                          | Save Button                     |
+| View Mustering History   | Reports               | Mustering Event History    | Reports & Mustering Event History Section & View History in Mustering |
+| Device Logs              | Support               | Device Logs                | Support & Device Log Section    |
+
